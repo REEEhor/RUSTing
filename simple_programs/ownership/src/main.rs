@@ -58,8 +58,16 @@ fn main() {
     text.clear();
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////
-    
+    // Borrowing
+
+    let mut _vec = vec![1, 2, 3];
+    let _num = &_vec[0];
+    steal_ownership(_vec);
+    // Cannot do this
+    // println!("{_num}");
 }
+
+fn steal_ownership(_vec: Vec<i32>) {}
 
 fn first_word(s: &str) -> &str {
     let bytes = s.as_bytes();
