@@ -1,0 +1,6 @@
+Hello, I'm a file.
+My purpouse, as a file is to help the programmer to test
+the program, that he or she is writing.
+
+Also, here is an apple:
+o <- apple.
